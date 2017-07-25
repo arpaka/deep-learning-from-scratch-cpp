@@ -1,14 +1,20 @@
 CXX      = g++
-CXXFLAGS = -std=c++14 -g -Wall -Wextra -Wno-write-strings
+CXXFLAGS = -std=c++14 -g -Wall -Wextra \
+-Wno-parentheses \
+-Wno-unused-local-typedefs \
+-Wno-write-strings
+
 INCLUDES = \
--I../matplotlib-cpp \
 -I/usr/include/python2.7 \
--I/usr/local/include/xtensor-blas/flens
+-I../matplotlib-cpp \
+-I../xtensor/include \
+-I../xtensor-blas/include \
+-I../xtensor-blas/include/xtensor-blas/flens
 
 TGTS   = `ls test/test_*.cc | sed -e s/.cc//`
 TGT   ?= test/test_matplotlib
 #TGT  ?= test/test_xtensor
-#SRCS  = 
+#SRCS  =
 SRCS += $(TGT).cc
 BIN   = $(TGT)
 OBJS  = $(SRCS:.cc=.o)

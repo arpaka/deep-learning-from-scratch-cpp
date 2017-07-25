@@ -1,3 +1,9 @@
 [submodule "matplotlib-cpp"]
 	path = matplotlib-cpp
 	url = https://github.com/lava/matplotlib-cpp.git
+[submodule "xtensor"]
+	path = xtensor
+	url = https://github.com/QuantStack/xtensor.git
+[submodule "xtensor-blas"]
+	path = xtensor-blas
+	url = https://github.com/QuantStack/xtensor-blas.git
