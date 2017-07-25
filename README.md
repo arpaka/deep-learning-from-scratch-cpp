@@ -17,9 +17,7 @@
 - [xtensor](https://github.com/QuantStack/xtensor)
 - [xtensor-blas](https://github.com/QuantStack/xtensor-blas)
 
-### 事前準備
-
-使用ライブラリ(matplitlib-cpp, xtensor, xtensor-blas)の動作に必要な環境を準備します。
+使用ライブラリ(matplitlib-cpp, xtensor, xtensor-blas)の動作には下記のソフトウェアをインストールください。
 
 ```sh
 sudo apt-get install python-matplotlib python-numpy python2.7-dev python-tk
