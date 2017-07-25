@@ -1,7 +1,7 @@
 #include "types.h"
 #include "sigmoid.h"
-#include "xtensor/xio.hpp"
 #include "xtensor-blas/xlinalg.hpp"
+#include "xtensor/xio.hpp"
 #include <iostream>
 
 template <typename T>

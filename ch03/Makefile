@@ -1,17 +1,18 @@
 CXX      = g++
-CXXFLAGS = -std=c++14 -g -Wall -Wextra
+CXXFLAGS = -std=c++14 -g -Wall -Wextra -Wno-write-strings
 INCLUDES = -Iinclude \
+-I../matplotlib-cpp \
+-I/usr/include/python2.7 \
 -I/usr/local/include/xtensor-blas/flens
 
 TGTS   = `ls test/test_*.cc | sed -e s/.cc//`
-TGT   ?= test/test_nn_3layers
-#TGT  ?= test/test_relu
-#TGT  ?= test/test_xtensor
-#SRCS  = src/relu.cc
+#TGT   ?= test/test_nn_3layers
+TGT  ?= test/test_relu
+#SRCS  =
 SRCS += $(TGT).cc
 BIN   = $(TGT)
 OBJS  = $(SRCS:.cc=.o)
-LIBS  =
+LIBS  = -lpython2.7
 
 all: compile_all
 
