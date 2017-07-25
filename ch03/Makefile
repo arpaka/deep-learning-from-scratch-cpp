@@ -13,8 +13,9 @@ INCLUDES = -Iinclude \
 
 TGTS   = `ls test/test_*.cc | sed -e s/.cc//`
 #TGT   ?= test/test_nn_3layers
-#TGT  ?= test/test_relu
-TGT  ?= test/test_sigmoid
+TGT   ?= test/test_step_function
+#TGT   ?= test/test_relu
+#TGT   ?= test/test_sigmoid
 #SRCS  =
 SRCS += $(TGT).cc
 BIN   = $(TGT)
