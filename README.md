@@ -9,7 +9,7 @@
 
 ## 必要条件
 
-ソースコードを実行するには、下記のソフトウェアがインストールされている必要があります。
+ソースコードを実行するには、下記のソフトウェアを使用します。
 
 - make
 - g++ 4.9 >=
@@ -19,42 +19,22 @@
 
 ### 事前準備
 
-#### matplotlib-cpp
+外部ライブラリ(matplitlib-cpp, xtensor, xtensor-blas)の動作に必要な環境を準備します。
 
 ```sh
 sudo apt-get install python-matplotlib python-numpy python2.7-dev python-tk
-```
-
-#### xtensor
-
-```sh
 sudo apt-get install build-essential cmake libgtest-dev
-git clone https://github.com/QuantStack/xtensor.git
-cd xtensor
-mkdir build
-cd build
-cmake -DBUILD_TESTS=ON ../
-make
-test/test_xtensor
-sudo make install
-```
-
-#### xtensor-blas
-
-```sh
 sudo apt-get install libopenblas-dev liblapack-dev
-git clone https://github.com/QuantStack/xtensor-blas.git
-cd xtensor-blas
-sudo make install
 ```
 
 ## 実行方法
 
-GitHubからソースコードを取得します。
+GitHubからソースコードを取得します。```--recursive```を忘れず指定してください。
 
 ```sh
 git clone --recursive https://github.com/arpaka/deep-learning-from-scratch-cpp.git
 cd deep-learning-from-scratch-cpp
+make lib
 ```
 
 各章のフォルダへ移動して、makeコマンドを実行します。
