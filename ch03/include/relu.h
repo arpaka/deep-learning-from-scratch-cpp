@@ -1,3 +1,6 @@
+#ifndef RELU_H
+#define RELU_H
+
 #include "types.h"
 #include <math.h>
 
@@ -10,3 +13,5 @@ array_t<T> relu(array_t<T> x)
   }
   return y;
 }
+
+#endif
