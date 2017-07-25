@@ -19,7 +19,7 @@
 
 ### 事前準備
 
-外部ライブラリ(matplitlib-cpp, xtensor, xtensor-blas)の動作に必要な環境を準備します。
+使用ライブラリ(matplitlib-cpp, xtensor, xtensor-blas)の動作に必要な環境を準備します。
 
 ```sh
 sudo apt-get install python-matplotlib python-numpy python2.7-dev python-tk
@@ -34,19 +34,15 @@ GitHubからソースコードを取得します。```--recursive```を忘れず
 ```sh
 git clone --recursive https://github.com/arpaka/deep-learning-from-scratch-cpp.git
 cd deep-learning-from-scratch-cpp
-make lib
 ```
 
-各章のフォルダへ移動して、makeコマンドを実行します。
+使用ライブラリ(xtensor)をビルドした後、各章のフォルダへ移動して```make```を実行します。
 
 ```sh
-$ cd ch01
-$ make
-$ ./test/test_matplotlib
-
-$ cd ../ch05
-$ make
-$ ./train_nueralnet
+make lib
+cd ch01
+make
+./test/test_matplotlib
 ```
 
 ## ライセンス
