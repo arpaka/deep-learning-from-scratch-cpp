@@ -1,5 +1,5 @@
-#include "types.h"
-#include "sigmoid.h"
+#include "types.hpp"
+#include "sigmoid.hpp"
 #include "xtensor-blas/xlinalg.hpp"
 #include "xtensor/xio.hpp"
 #include <iostream>

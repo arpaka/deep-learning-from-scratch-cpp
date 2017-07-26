@@ -1,5 +1,5 @@
-#ifndef TYPES_H
-#define TYPES_H
+#ifndef TYPES_HPP
+#define TYPES_HPP
 
 #include "xtensor/xarray.hpp"
 #include <string>

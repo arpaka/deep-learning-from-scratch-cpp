@@ -1,7 +1,7 @@
-#ifndef STEP_FUNCTION_H
-#define STEP_FUNCTION_H
+#ifndef STEP_FUNCTION_HPP
+#define STEP_FUNCTION_HPP
 
-#include "types.h"
+#include "types.hpp"
 #include <math.h>
 
 template <typename T>

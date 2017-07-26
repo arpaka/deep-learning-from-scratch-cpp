@@ -1,5 +1,5 @@
-#include "types.h"
-#include "step_function.h"
+#include "types.hpp"
+#include "step_function.hpp"
 #include "matplotlibcpp.h"
 //#include "xtensor/xio.hpp"
 //#include <iostream>

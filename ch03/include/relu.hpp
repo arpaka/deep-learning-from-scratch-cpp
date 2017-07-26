@@ -1,7 +1,7 @@
-#ifndef RELU_H
-#define RELU_H
+#ifndef RELU_HPP
+#define RELU_HPP
 
-#include "types.h"
+#include "types.hpp"
 #include <math.h>
 
 template <typename T>

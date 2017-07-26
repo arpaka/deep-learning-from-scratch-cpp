@@ -1,7 +1,7 @@
-#ifndef SIGMOID_H
-#define SIGMOID_H
+#ifndef SIGMOID_HPP
+#define SIGMOID_HPP
 
-#include "types.h"
+#include "types.hpp"
 #include "xtensor/xmath.hpp"
 
 template <typename T>

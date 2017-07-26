@@ -1,5 +1,5 @@
-#include "types.h"
-#include "relu.h"
+#include "types.hpp"
+#include "relu.hpp"
 #include "matplotlibcpp.h"
 //#include "xtensor/xio.hpp"
 //#include <iostream>
