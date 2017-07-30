@@ -5,7 +5,7 @@
 
 ## ファイル構成
 
-本家に準じます。
+基本的には本家に準じます。
 
 ## 必要条件
 
@@ -34,7 +34,7 @@ git clone --recursive https://github.com/arpaka/deep-learning-from-scratch-cpp.g
 cd deep-learning-from-scratch-cpp
 ```
 
-使用ライブラリ(xtensor)をビルドした後、各章のフォルダへ移動して```make```を実行します。
+top階層で```make lib```した後、各章のフォルダへ移動して```make```を実行します。
 
 ```sh
 make lib
