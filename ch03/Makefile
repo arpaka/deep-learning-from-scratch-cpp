@@ -13,7 +13,7 @@ INCLUDES = -Iinclude \
 
 TGTS   = `ls test/test_*.cc | sed -e s/.cc//`
 TGT   ?= test/test_softmax
-#TGT   ?= test/test_nn_3layers
+#TGT   ?= test/test_three_layer_net
 #TGT   ?= test/test_step_function
 #TGT   ?= test/test_relu
 #TGT   ?= test/test_sigmoid
@@ -23,7 +23,7 @@ BIN   = $(TGT)
 OBJS  = $(SRCS:.cc=.o)
 LIBS  = -lpython2.7
 
-all: test
+all: compile_all
 
 compile: $(BIN)
 
