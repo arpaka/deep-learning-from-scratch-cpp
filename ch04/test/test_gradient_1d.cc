@@ -30,7 +30,8 @@ func_t<T2> tangent_line(func_t<T1> f, T1 x)
   return [d,y](T2 t){ return d*t + y; };
 }
 
-int main(){
+int main()
+{
   array_t<double> x = xt::arange(0.0, 20.0, 0.1);
   auto y = function_1<array_t<double>>(x);
   plt::xlabel("x");
