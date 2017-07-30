@@ -1,17 +1,11 @@
 #ifndef RELU_HPP
 #define RELU_HPP
 
-#include "types.hpp"
-#include <math.h>
+#include "xtensor/xmath.hpp"
 
-template <typename T>
-array_t<T> relu(array_t<T> x)
+auto relu(auto x)
 {
-  array_t<T> y = x;
-  for (std::size_t i=0; i<x.size(); ++i) {
-    y(i) = (x(i) < 0)?  0 : x(i);
-  }
-  return y;
+  return xt::maximum(0, x);
 }
 
 #endif

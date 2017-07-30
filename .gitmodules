@@ -7,3 +7,6 @@
 [submodule "xtensor-blas"]
 	path = xtensor-blas
 	url = https://github.com/QuantStack/xtensor-blas.git
+[submodule "mnist"]
+	path = mnist
+	url = https://github.com/arpaka/mnist-loader.git

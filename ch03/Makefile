@@ -12,8 +12,9 @@ INCLUDES = -Iinclude \
 -I../xtensor-blas/include/xtensor-blas/flens
 
 TGTS   = `ls test/test_*.cc | sed -e s/.cc//`
+TGT   ?= test/test_softmax
 #TGT   ?= test/test_nn_3layers
-TGT   ?= test/test_step_function
+#TGT   ?= test/test_step_function
 #TGT   ?= test/test_relu
 #TGT   ?= test/test_sigmoid
 #SRCS  =
@@ -22,7 +23,7 @@ BIN   = $(TGT)
 OBJS  = $(SRCS:.cc=.o)
 LIBS  = -lpython2.7
 
-all: compile_all
+all: test
 
 compile: $(BIN)
 
