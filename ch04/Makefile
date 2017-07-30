@@ -12,7 +12,8 @@ INCLUDES = -Iinclude \
 -I../xtensor-blas/include/xtensor-blas/flens
 
 TGTS   = `ls test/test_*.cc | sed -e s/.cc//`
-TGT   ?= test/test_gradient_1d
+TGT  ?= test/test_gradient_2d
+#TGT ?= test/test_gradient_1d
 #SRCS  =
 SRCS += $(TGT).cc
 BIN   = $(TGT)
